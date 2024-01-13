@@ -9,7 +9,7 @@ from geometry_msgs.msg import Pose2D
 
 def create_header():
     h = Header()
-    h.stamp = 
+    # h.stamp = 
     return h
 
 

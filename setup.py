@@ -28,9 +28,14 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'object_detection = object_detection.object_detection:main',
-            'yolo_1 = object_detection.yolo_1:main',
-            'sub_image = object_detection.sub_image:main'
+            'yolo_deli_flir = object_detection.deliver.yolo_deli_flir:main',
+            'yolo_deli_logi_direct = object_detection.deliver.yolo_deli_logi_direct:main',
+            'yolo_deli_logi_sub = object_detection.deliver.yolo_deli_logi_sub:main',
+            'yolo_amz = object_detection.amz.yolo_amz:main',
+            'yolo_amz_high = object_detection.amz.yolo_amz_high:main',
+            'yolo_amz_high_sync = object_detection.amz.yolo_amz_high_sync:main',
+            'yolo_amz_sub = object_detection.amz.yolo_amz_sub:main',
+            'yolo_amz_high_sync_rightup = object_detection.amz.yolo_amz_high_sync_rightup:main'
         ],
     },
 )
